@@ -1,0 +1,24 @@
+<nz-layout>
+  <nz-sider [nzCollapsible]="true" [(nzCollapsed)]="isCollapsed" [nzBreakpoint]="'sm'" [nzCollapsedWidth]="0">
+  <app-side-nav></app-side-nav>
+  </nz-sider>
+  <nz-layout>
+    <nz-header style="background: #fff; padding:0;display: flex;flex-direction: row-reverse">
+      <div>
+        <input [(ngModel)]="searchText" type="text" (keyup)="searchNote()" placeholder="Search"/>
+      </div>
+      <div>
+        <i nz-icon class="create-icon" type="form" theme="outline" (click)="onNewClick()"></i>
+      </div>
+      <div>
+        <i *ngIf="toDelete.id" nz-icon class="create-icon" type="delete" theme="outline" (click)="onDeleteClick()"></i>
+      </div>
+    </nz-header>
+    <nz-content style="margin:24px 16px 0;">
+      <div style="padding:24px; background: #fff; min-height: 100%;">
+        <app-editor></app-editor>
+      </div>
+    </nz-content>
+    <nz-footer style="text-align: center;">Note App | Designed and Developed by Jitendra Singh Chauhan</nz-footer>
+  </nz-layout>
+</nz-layout>

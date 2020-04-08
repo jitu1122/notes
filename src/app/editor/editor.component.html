@@ -1,0 +1,8 @@
+<div class="text-container">
+    {{noteDataCurrent.timestamp | date:'dd MMMM yyyy \'at\' hh:mm a'}}
+</div>
+<textarea
+        placeholder="Enter your text here!"
+        (change)="onTextChange()"
+        [(ngModel)]="noteDataCurrent.note_text">
+</textarea>

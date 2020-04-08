@@ -1,0 +1,32 @@
+.ant-layout {
+  min-height: 100vh;
+}
+::ng-deep .ant-layout-sider-zero-width-trigger {
+  top: 11px !important;
+}
+input:focus {outline: none; }
+::ng-deep input {
+  line-height: normal !important;
+  border-radius: 10px;
+  border: 1px solid #7f7f7f;
+  padding: 5px;
+  //float: right;
+  width: 250px;
+  margin: 17px;
+}
+@media only screen and (max-width: 600px) {
+  input {
+    margin-right: 10px;
+  }
+}
+.ant-row{
+  width:100%;
+}
+.create-icon{
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.create-icon:hover {
+  color: #1890ff;
+}
